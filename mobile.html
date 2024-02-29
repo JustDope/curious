@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    #header {
+      text-align: center;
+      padding: 20px;
+      background-color: #aefa22;
+      color: white;
+    }
+
+    #logo {
+      max-width: 20px;
+      max-height: 100px;
+      margin-bottom: 10px;
+    }
+
+    #mainContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+    }
+
+    #playButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    #socialButtons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background-color: #aefa22;
+    }
+
+    .socialButton {
+      background-color: #1877f2; /* Facebook blue color */
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .socialButton.youtube {
+      background-color: #ff0000; /* YouTube red color */
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <img id="s770e21260" src="s770e21260.20240120071849.png" alt="Your Logo">
+    <h1>Curious Network</h1>
+  </div>
+
+  <div id="mainContent">
+    <button id="playButton" onclick="togglePlay()"  target="_blank">Listen Here</button>
+  </div>
+
+  <div id="socialButtons">
+    <button class="socialButton">Facebook</button>
+    <button class="socialButton youtube" >  YouTube</button>
+  </div>
+
+  <script>
+    function togglePlay() {
+      // Add your logic to play or pause the online radio here
+      // You may use the same audio element as in the previous example
+    }
+  </script>
+</body>
+</html>
